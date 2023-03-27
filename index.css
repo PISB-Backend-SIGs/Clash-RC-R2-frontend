@@ -124,7 +124,7 @@
 
 /* End Buttons  */
 .console-btn{
-    width: 100px;
+    width: 120px;
     margin-left: 10px;
     border-radius: 10px;
 }
@@ -169,9 +169,9 @@
     font-weight: 700;
     outline: none;
     position: relative;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
 }
 .console-btn,.run-btn {
     border: 3px solid rgb(255, 255, 255);
@@ -184,9 +184,9 @@
     content: '';
     position: absolute;
     z-index: -1;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
     color: black;
 }
 .console-btn:after{
@@ -194,7 +194,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgb(6, 100, 188);
+    background: rgb(47, 255, 50);
     color: black;
 }
 .run-btn:after{

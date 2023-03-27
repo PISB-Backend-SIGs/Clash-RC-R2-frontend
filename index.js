@@ -7,14 +7,33 @@ const langSelect = document.getElementById('langbtn');
 
 // Create an Ace editor instance
 const editor = ace.edit('editor1');
+editor.session.setValue(" Select the language First and then Start the Coding .");
 
 // Add an event listener to the select element
 langSelect.addEventListener('change', function() {
  
   const selectedLang = langSelect.value;
 
-  // Set the mode of the Ace editor based on the selected language
-  editor.session.setMode(`ace/mode/${selectedLang}`);
+  // Set the mode of the Ace editor based on the selected language  and set the boier plate accordingly   
+    if(selectedLang==='c_cpp'){
+      editor.session.setMode(`ace/mode/c_cpp`);
+      editor.session.setValue("");
+      editor.session.setValue("#include<iostream>\n int main(){{\n\n\n\t\t//write your code here \n\t\treturn 0;\n}"); 
+      
+    }
+    if(selectedLang==='c'){
+      editor.session.setMode(`ace/mode/c_cpp`);
+      editor.session.setValue("");
+      editor.session.setValue("#include<stdio.h>\n\n void main(){\n\n\n\t\t//write your code here \n\t\treturn 0;\n}");
+    }
+  
+  if(selectedLang==='python'){
+    editor.session.setMode(`ace/mode/${selectedLang}`);
+    editor.session.setValue("");
+    editor.session.setValue("#Write the Python code.....");
+    
+  }
+
 });
 
 
@@ -54,4 +73,26 @@ submitBtn.addEventListener('click', () => {
 consoleBtn.addEventListener('click', () => {
   consoleDiv.scrollIntoView({ behavior: 'smooth' });
 });
+
+
+
+//console buttons onclicke events 
+
+var consoleBtnn = document.getElementById("console-btn");
+var consoleBtnDown = consoleBtnn.querySelector(".down");
+var consoleBtnUp = consoleBtnn.querySelector(".up");
+
+consoleBtnn.addEventListener("click", function() {
+  if (consoleBtnDown.classList.contains("hidden")) {
+    consoleBtnDown.classList.remove("hidden");
+    consoleBtnUp.classList.add("hidden");
+  } else {
+    consoleBtnDown.classList.add("hidden");
+    consoleBtnUp.classList.remove("hidden");
+  }
+});
+
+
+
+
 
