@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fdfdfd;
+    /* position: relative; */
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #0e1230;
+    /* background: url("https://media.istockphoto.com/id/1055882990/vector/abstract-futuristic-presentation-panel-technology-display.jpg?s=612x612&w=0&k=20&c=lEkPB5umoOVg2tX5ariS4USUrjfArnhjiVFbzorVM2Y="); 
+       background: url(https://e0.pxfuel.com/wallpapers/168/276/desktop-wallpaper-universe-interstellar-space-6k-space.jpg); */
+    /* background-image: linear-gradient(#141e30,#0d1927); */
+    /* background: url("https://iriomote-tour.com/wp-content/uploads/2017/12/24c7afb6bf0cd7a7fd8bdc90c0040c97_m.jpg");
+    /* height: fit-content; */
+    /* background-repeat: no-repeat; 
+    background-size: 100% 100%;    */
+    width: 100%;
+    opacity: 100%;
+}
+
+
+.Navbar2{
+    /* text-decoration: none; */
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: inherit;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.timerr{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6px 10%;
+    font-size: 1.4rem;
+    color: #fdfdfd;
+    /* text-shadow: 1px 1px 10px #11c6c3; */
+    font-size: 1.8rem;
+}
+
+
+.navbar{
+    flex: 2;
+    padding: 0 10px;
+}
+
+.navbar-nav{
+    height: -weblit-fill-available!important;
+}
+.nav-item{
+    padding: 0 10px;
+    margin: 0 40px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+a:hover{
+    border-bottom: 3px soild #0bbe50;
+    background-color: #152423; 
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+    /* height: -webkit-fill-available; */
+}
+
+@media (max-width:600px) {
+    .logo{
+        display: none;
+    }
+}
