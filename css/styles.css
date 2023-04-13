@@ -121,6 +121,10 @@ thead, th{
     font-size: 0.95rem;
     color:#FFFFFF; 
 }
+.btn3 a{
+    color: white;
+    text-decoration: none;
+}
 
 .btn2:hover{
     background-color:#3498D8;
