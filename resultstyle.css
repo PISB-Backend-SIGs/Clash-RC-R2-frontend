@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    height: auto;
+}
+.container
+{
+    background-color:#000000; 
+}
+.name_1 {
+    margin: .813rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: azure;
+}
+
+/* .head{
+    display: flex;
+    align-items: center;
+    padding: 20px 80px;
+    background: color #e3e6f3;;ba
+    box-shadow: 0 5px 15px ;
+} */
+
+/* Add a gray right border to all list items, except the last item (last-child) */
+
+.main{
+    text-align: left;
+    margin-left: 10px;
+}
+.navbar {
+    
+    background-color:rgb(31, 8, 53); 
+    color: aliceblue;
+    height: 50px;
+    text-align: right;
+}
+
+.btn {
+    top:1.5%;
+    left:90%;
+    width:80px;
+    color: white;
+    height: 35px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 0%;
+    border: 1px white;
+    background: rgb(82, 22, 112);
+    border-radius: 16%;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    }
+
+.container{
+    justify-content: center;
+    display: flex;
+    border: .188rem rgb(82, 22, 112);
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 100vw;
+}
+
+.container_2 {
+    margin: .625rem;
+    display: flex ;
+    padding: .313rem;
+    justify-content:center;
+    background-color: rgba(32, 12, 43, 0.897);
+    border: .125rem solid;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    height: 53vh;
+    width: 40vw;
+    
+}
+
+.box_1 {
+    margin: .625rem;
+    margin: top 1.063rem; 
+    background-color: rgba(36, 4, 54, 0.712);
+    border: .125rem solid rgb(114, 31, 153);
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 22vh;
+    width: 45%;
+}
+
+.box_2 {
+    margin: .625rem;
+    margin: top 1.063rem;
+    display: flex;
+    background-color: rgba(36, 4, 54, 0.712);
+    border: .125rem solid rgb(114, 31, 153);
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 22vh;
+    width: 45%;
+}
+.box_3 {
+    margin: .625rem;
+    display: flex;
+    background-color: rgba(36, 4, 54, 0.712);
+    border: .125rem solid rgb(114, 31, 153);
+    border-radius:30px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 22vh;
+    width: 45%;
+}
+
+.box_4 {
+    margin: .625rem;
+    display: flex;
+    background-color: rgba(36, 4, 54, 0.712);
+        border: .125rem solid rgb(114, 31, 153);
+        border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 22vh;
+    width: 45%;
+}
+.box_6 {
+    margin: .625rem;
+    border: .125rem solid rgb(82, 22, 112);
+    font-family: 'Times New Roman', Times, serif;
+    height: 25vh;
+    color: white;
+    background-color: rgba(32, 12, 43, 0.897);
+    border-radius: 30px;
+    width: 40vw;
+    justify-content: right;
+}
+.box_5 {
+    margin: .625rem;
+    color: white;
+    margin-left: 4.813rem;
+    padding-left: .625rem;
+    background-color: rgba(32, 12, 43, 0.897);
+    border: .125rem solid rgb(82, 22, 112);
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 25vh;
+    width: 40vw;
+}
+
+.pie{
+    border: .125rem solid rgb(82, 22, 112);
+    margin: .625rem;
+    height: 54.5vh;
+    border-radius: 30px;
+    background-color: rgba(32, 12, 43, 0.897);
+    width: 35vw;
+} 
+
+/* @media(max-width:998px)
+{
+    .html {
+            font-size: 55%;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+} */
+
+@media(max-width:768px) {
+    .html {
+        font-size: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .html {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .container{
+        background-color: #000000;
+        height: auto;
+    }
+    .h1{
+        font-size: 36px;;
+    }
+    .box_1 {
+        margin: .150rem;
+        margin: top 1.063rem; 
+        border: .10rem solid rgb(82, 22, 112);
+        background-color: rgba(36, 4, 54, 0.712);
+        border-radius: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        height: 10vh;
+        width: 100%;
+    }
+    .box_2 {
+        margin: .150rem;
+        margin: top 1.063rem;
+        display: flex;
+        border: .10rem solid black;
+        background-color: rgba(36, 4, 54, 0.712);
+            border-radius: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        height: 10vh;
+        width: 100%;
+    }
+    .box_3 {
+        margin: .150rem;
+        display: flex;
+        border: .10rem solid black;
+        background-color: rgba(36, 4, 54, 0.712);
+            border-radius: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        height: 10vh;
+            width: 100%;
+    }
+    
+    .box_4 {
+        margin: .150rem;
+        display: flex;
+        border: .10rem solid black;
+        background-color: rgba(36, 4, 54, 0.712);
+            border-radius: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        height: 10vh;
+        width: 100%;
+    }
+    .container_2 {
+        margin: .625rem;
+        display: flex ;
+        padding: .313rem;
+        background-color: rgba(36, 4, 54, 0.712);
+            border-radius: 30px;
+        justify-content:center;
+        border: .125rem solid black;
+        flex-wrap: wrap;
+        height: 53vh;
+        width: 100vw;
+        
+    }
+    .pie{
+        border: .125rem solid black;
+        margin: .625rem;
+        background-color: rgba(36, 4, 54, 0.712);
+        border-radius: 30px;
+        height: 25vh;
+        width: 90vw;
+    } 
+    .box_6 {
+        margin: .625rem;
+        border: .125rem solid black;
+        background-color: rgba(36, 4, 54, 0.712);
+            border-radius: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        height: 25vh;
+        width: 100vw;
+        justify-content: right;
+    }
+    .box_5 {
+        margin: .625rem;
+        padding-left: .625rem;
+        background-color: rgba(36, 4, 54, 0.712);
+            border-radius: 30px;
+        border: .125rem solid black;
+        font-family: 'Times New Roman', Times, serif;
+        height: 25vh;
+        width: 100vw;
+    }
+    .btn{
+        top: 1.5%;
+            left: 75%;
+            width: 75px;
+            color: white;
+            height: 30px;
+            margin-top: 0%;
+            border: 1px white;
+            background: rgb(82, 22, 112);
+            border-radius: 16%;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            justify-items:center;
+    }
+}
