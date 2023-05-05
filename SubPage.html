@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clash RC-Frontend</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="subPagestyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <!-- Modals by Bootstrap -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">View Submission</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Neque volutpat ac tincidunt vitae semper quis. Mauris pellentesque pulvinar pellentesque habitant morbi tristique.
+                Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. Eget dolor morbi non arcu. 
+                Et egestas quis ipsum suspendisse. In hac habitasse platea dictumst. 
+                Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+                Tempus urna et pharetra pharetra massa massa. Ut eu sem integer vitae justo eget. Consequat ac felis donec et..</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn2">Copy Submission</button>
+              <!-- <button type="button" class="btn2">Save Changes</button> -->
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div>
+        <nav class="navbar">
+            <form class="inline-block">
+            <a href="#"><button type="button" class="btn2">Question Hub</button></a>
+            <a href="#"><button type="button" class="btn2">Leaderboard</button></a>
+            <a href="#"><button type="button" class="btn btn-danger">Log Out</button></a> 
+            <!-- <section class="navbar-right">
+                <img class="image" src="images/download.png" alt="PISB-img">
+            </section> -->
+            </form>
+        </nav>
+
+    <main class="table">
+        <section class="table_header">
+            <h2 class="heading">Submissions Page</h1>
+        </section>
+        <section class="table_body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Player</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>1.</td>
+                        <td>Player 1</td>
+                        <td>0:3:2</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Player 2</td>
+                        <td>0:5:2</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Player 3</td>
+                        <td>0:3:4</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3"  data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Player 4</td>
+                        <td>0:5:4</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Player 5</td>
+                        <td>0:4:5</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Player 6</td>
+                        <td>0:3:6</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Player 7</td>
+                        <td>0:5:8</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>Player 8</td>
+                        <td>0:3:7</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>9.</td>
+                        <td>Player 9</td>
+                        <td>0:5:6</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>Player 10</td>
+                        <td>0:4:5</td>
+                        <td>
+                            <p class="submitted">Submitted</p>
+                        </td>
+                        <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal">View</button></td>
+                    </tr> -->
+
+
+                 <!-- the Above code is commented ass the tabel are genrated acooring to the javascript mapping function .. -->
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+        <section class="footer">
+            <p class="description">© PICT IEEE STUDENT BRANCH</p>
+        </section>
+    </div>
+
+    <script >const players = [
+        { rank: 1, name: 'Player 100', score: '0:3:2' ,link:1 },
+        { rank: 2, name: 'Player 200', score: '0:5:2' ,link:1},
+        { rank: 3, name: 'Player 3', score: '0:3:4' ,link:1},
+        { rank: 4, name: 'Player 4', score: '0:5:4' ,link:1},
+        { rank: 5, name: 'Player 5', score: '0:4:5' ,link:1},
+        { rank: 6, name: 'Player 6', score: '0:3:6' ,link:1},
+        { rank: 7, name: 'Player 7', score: '0:5:8' ,link:1},
+        { rank: 8, name: 'Player 8', score: '0:3:7' ,link:1},
+        { rank: 9, name: 'Player 9', score: '0:5:6' ,link:1},
+        { rank: 10, name: 'Player 10', score: '0:4:5' ,link:1}
+      ];
+      
+      const tableBody = players.map(player => `
+        <tr>
+          <td>${player.rank}.</td>
+          <td>${player.name}</td>
+          <td>${player.score}</td>
+          <td>
+            <p class="submitted">Submitted</p>
+          </td>
+          <td><button class="btn3" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="${players.link}">VIEW</a> </button></td>
+        </tr>
+      `).join('');
+      
+      const tableBodyElement = document.createElement('tbody');
+      tableBodyElement.innerHTML = tableBody;
+      
+      // Append the table body element to your HTML table
+      const tableElement = document.querySelector('table'); // Replace with your actual table selector
+      tableElement.appendChild(tableBodyElement);</script>
+</body>
+</html>

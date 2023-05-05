@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding page rc round 2 </title>
+    <link rel="stylesheet" href="clashcodeing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+</head>
+<body class="mainBody">
+ 
+  <!-- Hearder strip code starts -->
+<section class="head-strip">
+         <!-- Question numbers -->
+   <div class="questions ">
+     <div class="queno"><button type="button  "class=" btn  btn-dark" id="qbtn">1</button></div>
+     <div class="queno"><button type="button " class=" btn btn-dark   " id="qbtn">2</button></div>
+     <div class="queno"><button type="button " class=" btn btn-dark   " id="qbtn">3</button></div>
+     <div class="queno"><button type="button " class=" btn btn-dark   " id="qbtn">4</button></div>
+     <div class="queno"><button type="button " class=" btn btn-dark   " id="qbtn">5</button></div>
+     <div class="queno"><button type="button " class=" btn btn-dark   " id="qbtn">6</button></div>
+    
+   </div>
+        <!-- Score  -->
+   <div class="score-time">
+    <div class="btn-group mx-auto" role="group" aria-label="Basic outlined example">
+        <div type="button" class="btn btn-outline-dark "id="score">+7</div>
+      </div>
+   </div>
+</section>
+  <!-- Header strip ends  -->
+
+  <!-- The main Section  -->
+
+<section class="coding ">
+          <!-- the Question section starts here  -->
+  <div class="questionpart">
+    <div class="que-name">
+      <h3> Question Heading </h3>
+  </div>
+   <div class="quepart que-description" style="height: auto;">
+    <h3>Question Description</h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur ipsum culpa omnis voluptatum harum animi totam minus asperiores! Exercitationem nam voluptates iusto deleniti voluptatibus non perspiciatis atque asperiores! Inventore optio sapiente itaque cupiditate eos necessitatibus aperiam ullam
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis voluptas animi fugiat ipsam mollitia alias voluptates cumque totam inventore natus, aut, nam dolor magnam velit. Voluptate corporis rerum incidunt ad. 
+   </div>
+   <div class="quepart que-constrains">
+    <h3>Question Constraints</h3>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur ipsum culpa omnis voluptatum harum animi totam minus asperiores! Exercitationem nam voluptates iusto deleniti voluptatibus non perspiciatis atque asperiores! Inventore optio sapiente itaque cupiditate eos necessitatibus aperiam ullam 
+   </div>
+   <div class=" quepart que-examples">
+    <h3>Examples</h3>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequuntur ipsum culpa omnis voluptatum harum animi totam minus asperiores! Exercitationem nam voluptates iusto deleniti voluptatibus non perspiciatis atque asperiores! Inventore optio sapiente itaque cupiditate eos necessitatibus aperiam ullam facere quae ut possimus harum laboriosam, ducimus odit, eum sit consectetur vel, consequuntur dicta quas.
+   </div>
+ </div>
+
+
+       <!-- The code Editor Section Starts here ... -->
+   <div class="codingpart">
+
+    <div class="drop-buttons">
+        <div class="lang">
+            <select class="form-select langbtn btn-outline-dark " id="langbtn" aria-label="Default select example" style="background-color: rgba(3, 111, 212, 0.696);">
+                <option disabled selected value=""> Choose Language</option>
+                <option value="c" >C</option>
+                <option value="c_cpp">C++</option>
+                <option value="python">Python</option>
+              </select>
+        </div>
+        <div class="choosefile" >
+        
+         <input type="file"  class="form-control choosef btn-outline-dark"  id="customFile" accept=".c, .cpp, .py" />
+        </div>
+
+    </div>
+    <div class="code-section">
+      <div   class="codehere" id="editor1">
+         
+      </div>
+
+      <!-- comsole section -->
+       <div class="collapse mainconsole" id="test-cases" >
+         <h3> TEST-CASES</h3>
+
+        <div class="consoleBlocks">
+
+         <div class="block1">
+           <textarea>
+             // Custom Input 
+           </textarea>
+         </div>
+         <div class="block2">
+             <h5>This is Output </h5>
+         </div>
+
+        </div>
+        <div class="Status">
+          <div class="overallStatus">
+             Answer is Correct /Failed.
+          </div>
+          <div class="alltext d-flex flex-wrap ">
+            <div class="test d-flex mx-3"> Test Case 1   <ion-icon name="close-circle-outline" class="mx-3 my-1" size="large"></ion-icon> </div>
+            <div class="test d-flex mx-3"> Test Case 2  <ion-icon name="checkmark-circle-outline" class="mx-3 my-1" size="large"></ion-icon></div>
+            <div class="test d-flex mx-3"> Test Case 3  <ion-icon name="checkmark-circle-outline" class="mx-3 my-1" size="large"></ion-icon></div>
+            <div class="test d-flex mx-3"> Test Case 4  <ion-icon name="checkmark-circle-outline" class="mx-3 my-1" size="large"></ion-icon></div>
+          </div>
+        </div>
+       </div>
+      
+    </div>
+    
+
+    <!-- The Submit Button Code Starts here  -->
+    <div class="submit-strip">
+      <div class="console">
+        <button type="button" class="console-btn d-flex flex-wrap " data-toggle="collapse" id="console-btn"data-target="#test-cases" >
+          Console
+          <ion-icon name="chevron-up-outline" class="up mx-2 "></ion-icon>
+          <ion-icon name="chevron-down-outline" class="down hidden"></ion-icon>
+        </button>
+    </div>
+      <div class="submit-btn">
+        <button type="button" class="run-btn   btn-outline-dark">Run</button>
+      </div>
+      <div class="sub-btn">
+        <button type="button" class="run-btn  btn-outline-dark" id="submit-btn">Submit</button>
+      </div>
+    </div>
+
+   </div>
+</section>
+
+
+<!-- The Min Section ENds Here  -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.16.0/ace.js"></script>
+<script src="clashcoding.js"></script>     <!--The Javascript File .-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

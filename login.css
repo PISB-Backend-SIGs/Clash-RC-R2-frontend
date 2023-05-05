@@ -1,0 +1,362 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
+body {
+   background-color:#23242a;
+ background-image:url("newbg2.jpg") !important;
+  background-attachment: fixed;
+  /* background-blend-mode: lighten; */
+  
+  width: 100%;
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+}
+/* Define a grid container */
+.container {
+margin-top: 15%;
+display: grid;
+grid-template-columns: 1fr; /* Default to 1 column */
+gap: 20px; /* Add some space between the columns */
+padding-bottom: 50 px;
+}
+
+/* Divide the grid into 2 equal columns on larger screens */
+@media only screen and (min-width: 768px) {
+.container {
+grid-template-columns: 1fr 1fr;
+}
+}
+
+/* Style the left column */
+.left {
+display: flex;
+justify-content: center;
+align-items: center;
+ /* background: rgba(255,255,255,0.2);
+box-shadow: 0 4px,30px, rgba(0,0,0,0.1);
+backdrop-filter: blur(5px);  */
+}
+
+/* Style the image */
+.image {
+max-width: 100%;
+height: auto;
+filter: invert(100%) sepia(0) saturate(0) hue-rotate(25deg) brightness(102%) contrast(105%);
+
+/* box-shadow: #ffffff 2px 10px 50px; */
+}
+
+/* Style the right column */
+.right {
+
+/* justify-content: center;
+align-items: center; */
+padding-bottom: 50px;
+width: 380px;
+height: 405px;
+margin-right: 2px;
+background-color: #1c1c1c;
+/* background: rgba(255,255,255,0.2);
+box-shadow: 0 4px,30px, rgba(0,0,0,0.1);
+backdrop-filter: blur(5px); */
+
+
+border-radius: 8px;
+overflow: hidden;
+}
+.right::before
+{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+  z-index: 1;
+  transform-origin:  bottom right;
+  animation: animate 6s linear infinite ;
+}
+.right::after
+{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+  z-index: 1;
+  transform-origin:  bottom right;
+  animation: animate 6s linear infinite ;
+  animation-delay: -3s;
+}
+.borderLine
+{
+ position: absolute;
+ top: 0;
+ inset: 0; 
+
+}
+.borderLine::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+  z-index: 1;
+  transform-origin:  bottom right;
+  animation: animate 6s linear infinite ;
+  animation-delay: -1.5s;
+}
+.borderLine::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+  z-index: 1;
+  transform-origin:  bottom right;
+  animation: animate 6s linear infinite ;
+  animation-delay: -4.5s;
+}
+@keyframes animate
+{
+ 0%
+ {
+  transform: rotate(0deg);
+ }
+ 100%
+ {
+  transform: rotate(360deg);
+ }
+}
+
+/* Style the form */
+.right form 
+{height: 395px;
+ width: 370px;
+  margin-top: 5px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 6px;
+  position: absolute;
+  /* inset: 10 px; */
+  background-color: #000000;
+  padding: 40px 40px 40px 40px;
+  border-radius: 8px;
+  z-index:2;
+  display: flex;
+  flex-direction: column;
+  /* background: rgba(255,255,255,0.2);
+  box-shadow: 0 4px,30px, rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+   */
+
+justify-content: center;
+/* align-items: center;  */
+}
+.right form h2{
+  color:#fff;
+  font-weight:500;
+  text-align:center;
+  letter-spacing: 0.1em;
+}
+.right form .inputBox{
+  position:relative;
+  width: 300px;
+  margin-top: 35px;
+
+}
+.right form .inputBox input{
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+
+}
+
+
+.right form .inputBox span{
+  position:absolute;
+  left:0;
+  padding:20px 10px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size:1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.right form .inputBox input:valid ~ span,
+.right form .inputBox input:focus ~ span
+{
+  color:#fff;
+  font: size 0.75em;
+  transform: translateY(-34px);
+}
+.right form .inputBox i
+{
+  position: absolute;
+  left:0;
+  bottom:0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius:4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+
+}
+
+.right form .inputBox input:valid ~ i,
+.right form .inputBox input:focus ~ i
+{
+  height:44px;
+}
+.right form .links
+{
+  display: flex;
+  justify-content: space-between;
+}
+/* .right form .links a
+{
+margin: 10 px 0;
+font-size: 0.75em;
+color:#8f8f8f;
+text-decoration: none;
+} */
+/* .right form.links a:hover
+{
+  color:#fff;
+} */
+.right form input[type="submit"]
+{
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background: #fff;
+  cursor: pointer;
+  font-size:0.9em;
+  border-radius:4px;
+  font-weight:600;
+  width: 100px;
+  margin-top: 15px;
+  /* background: rgba(255,255,255,0.2); */
+  box-shadow: 0 4px,30px, rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+
+}
+.right form input[type="submit"]:active
+{
+opacity: 0;
+}
+.right form input[type="submit"]:hover
+{
+  color: #ffffff;
+  background: #e01c81;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 0.02s;
+}
+.select {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-top: 13px;
+  color: #8f8f8f;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.select input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 30%;
+  margin: 10;
+}
+
+/* On mouse-over, add a grey background color */
+.select:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.select input:checked ~ .checkmark {
+  background-color: #c60e7f;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+ 
+}
+
+/* Show the indicator (dot/circle) when checked */
+.select input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.select .checkmark:after {
+ 	top: 6px;
+	left: 6.5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 30%;
+	background: rgb(252, 254, 255);
+}
+.right form table{
+  margin-top: 4px;
+}
+
+
+  
+
+
+  /* input[type="submit"] 
+{
+
+width: 300 px;
+padding: 10px;
+margin: 10px 0;
+border-radius: 5px;
+border:none;
+background-color: #fff
+} */

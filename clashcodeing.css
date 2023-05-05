@@ -1,0 +1,384 @@
+/* Head strip for ques no , score and timer */
+.mainBody{
+    background-color: black;
+}
+.head-strip{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 7vh;
+    margin: 5px  auto;
+    width: 98vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgba(0, 49, 95, 0.829);  
+}
+.queno{
+    display: inline ;
+    margin: 0px 15px;
+}
+.questions{
+    margin: auto;
+   
+}
+#qbtn{
+    border-radius: 100%; 
+    background-color: rgba(0, 49, 95, 0.829);  
+    border-width: 3px;
+    border-color: #5036e4;
+    box-shadow: 0 0 10px #2b2fff;   
+    color: white;
+}
+#qbtn:hover
+{
+    color: white;
+}
+
+.score-time{
+    margin: auto 5vw auto auto;
+}
+
+
+/* Language and Code file Buttons  */
+.drop-buttons{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0px 20px;
+}
+
+.choosefile .choosef{
+    width: 200px;
+    margin-left: auto;
+}
+
+#langbtn{
+    width: 200px; 
+    /* height: 35px;  */
+    font-family: 'Quicksand,sans-serif';
+    font-size: 16px;
+    color: whitesmoke;
+    
+}
+
+/* codeing section */
+
+.coding{
+    
+    height: 80vh;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin: auto;
+    justify-content: center;
+    padding:10px ;
+     
+}
+
+
+/* question section */
+.questionpart{
+    margin:0px auto;
+    padding: 0px 8px;
+    display: grid;
+    grid-template-rows: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;        
+}
+/* code answer */
+.codingpart{
+    margin:0px auto;
+    width: 90%;
+    display: grid;
+    grid-template-rows: 7% 88% 7%;
+    
+}
+.code-section{
+    
+    margin-top: 3%;
+    display: grid;
+    padding-bottom: 10px;
+    
+}
+.codehere
+{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  
+
+}
+.codehere textarea{
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color:rgba(255, 255, 255, 0.171) ;
+
+}
+#editor1{
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* End Buttons  */
+.console-btn{
+    width: 120px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.submit-strip{
+    display: grid;
+
+    grid-template-columns:33% 33% 33% ;
+}
+.submit-btn{
+    padding: 0;
+}
+.run-btn
+{
+    border-radius: 10px;
+}
+.submit-btn button{
+    width: 100px;
+}
+.sub-btn button{
+    width: 100px;
+}
+#score,#time
+{
+    color: white;
+    font-size: 20px;
+}
+/* BUTTON HOVERING EFFECT */
+#score:hover,#time:hover{
+    background-color: rgb(3, 111, 212);
+}
+.console-btn,.run-btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.console-btn,.run-btn {
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.console-btn:hover,.run-btn:hover {
+    color: #fff;
+}
+.console-btn::after,.run-btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    color: black;
+}
+.console-btn:after{
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(47, 255, 50);
+    color: black;
+}
+.run-btn:after{
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(47, 255, 50);
+    
+}
+.btn-info::after{
+    color: rgb(255, 255, 255);
+}
+.console-btn:hover:after, .console-btn:active:after,.run-btn:hover:after,.run-btn:active:after{
+    width: 100%;
+}
+
+/*question section*/
+.que-name,.que-constrains
+{
+    color: rgb(253, 253, 253);
+    border-radius: 20px;
+   /* background-color: rgba(6, 100, 188, 0.454);*/
+    padding:10px 10px 10px 10px;
+    margin-bottom: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    justify-content: left;
+    text-align: justify;
+}
+.que-description,.que-examples
+{
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color:none;
+    padding:10px 10px 10px 10px;
+    margin-bottom: 5px;
+    /*background-color: rgba(0, 49, 95, 0.445);*/
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align:justify;
+}
+
+
+/* Media query for Responsiveness */
+
+    @media(max-width:800px){
+          .head-strip{
+            display: flex;
+            flex-direction: column-reverse;
+            height: 15vh;
+            justify-content: center;
+            align-items: center;
+          }
+          .score-time{
+            margin: 10px auto;
+           
+          }
+    
+          .queno{
+            width: 20px;
+          }
+
+          .coding{
+            display:flex;
+            flex-direction: column;
+            height: auto;
+
+          }
+
+          .questionpart{
+            height: 50vh;
+
+          }
+          
+          .codingpart{
+            margin-top: 8vh;
+            height: 80vh;
+
+          }
+        }
+
+     @media(max-width:500px){
+        .questionpart{
+            height: 60vh;
+            
+          }
+
+          .choosefile .choosef{
+            width: 100px;
+            margin-left: auto;
+        }
+        
+        #langbtn{
+            width: 100px;   
+        }
+         
+          
+     }   
+/* BOX ANIMATIONS*/
+/*scroll Bar*/
+/* width */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(6, 100, 188, 0.345);
+    border-radius: 10px;
+  }
+  
+
+
+  /* test cases starts here */
+
+  .consoleBlocks{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    height: 70%;
+    padding-top: 20px;
+
+
+  }
+
+  .block1,.block2{
+    margin: 5px 10px;
+  }
+
+  .block1 textarea{
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color:rgba(255, 255, 255, 0.171) ;
+  }
+  .block2
+  {
+    color: white;
+    font-family: "Quicksand,sans-serif";
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+
+  }
+  .block2 h5{
+    text-align: center;
+  }
+  #test-cases h3
+  {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    
+  }
+  #test-cases{
+    overflow-y: auto;
+    padding: 0px 10px;
+  }
+
+  .Status{
+    margin: 55px 20px 20px 20px;
+    color: white;
+}
+
+.overallStatus{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: green;
+      font-size: 24px;
+      margin-bottom: 15px;
+}
+
+.test{
+    margin: 10px 0px;
+
+}
+
+
+
