@@ -2,7 +2,10 @@ body{
     background-color: black;
 }
 
-
+footer {
+    background-color: #1f2833;
+    color: #ffffff;
+  }
 
 .display{
     color: aliceblue;

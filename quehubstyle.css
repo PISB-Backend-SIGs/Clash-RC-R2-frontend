@@ -12,6 +12,11 @@
     background-color: #000000;
     
 }
+
+footer {
+    background-color: #1f2833;
+    color: #ffffff;
+  }
 .navbar-brand{
    
     font-size: 1rem;

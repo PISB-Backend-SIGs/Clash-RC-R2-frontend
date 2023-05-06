@@ -1,72 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <meta charset="UTF-8"                            >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESULT PAGE</title>
-    <link rel="stylesheet" href="resultstyle.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="Your Name" content="Your page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Result.css" />
+    <link rel="stylesheet" href="coding_color.css" />
     <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-    </script>
-</head>
+      src="https://kit.fontawesome.com/84ff0cdea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Result</title>
+  </head>
 
-<body>
-    <!-- <h1 class="head">Clash Rc2</h1> -->
-    <div class="navbar">
-        <h1 class="main">Clash RC</h1>
-        <button class="btn" type="button">Logout</button></div>
-    <div class="container">
-        <div class="container_2">
-            <div class=box_1>
-                <h1 class="name_1">USERNAME:</h1>
-            </div>
-            <div class="box_2">
-                <h1 class="name_1">ATTEMPTED QUESTIONS:</h1>
-            </div>
-            <div class="box_3">
-                <h1 class="name_1">SCORE:</h1>
-            </div>
-            <div class="box_4">
-                <h1 class="name_1">CORRECT QUESTIONS:</h1>
-            </div>
+  <body>
+    <!-- Navbar goes here -->
+    <nav class="navbar navbar-expand-lg navbarr">
+      <div class="container-fluid">
+        <a class="navbar-brand navvi" href="#" style="padding: 0px"
+          ><img src="../img/clashwhite.png" alt="Clash Logo" height="30px"
+        /></a>
+        <a class="navbar-brand navvi timer" href="#" style="margin-left: 20px"
+          >TIMER
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars" style="color: white"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse stroke"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active navvi"
+                aria-current="page"
+                href="./questionHubPage.html"
+                style="margin-left: 10px; margin-right: 10px"
+                >Question Hub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link navvi"
+                aria-current="page"
+                href="./submissions.html"
+                style="margin-left: 10px; margin-right: 10px"
+                >Submissions</a
+              >
+            </li>
+
+            <li class="nav-item navvi">
+              <a
+                class="nav-link navvi"
+                style="margin-left: 10px; margin-right: 10px; cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#LogoutModal"
+                >Logout</a
+              >
+
+              <!-- <button type="button" class="btn btn-primary">
+                Launch demo modal
+              </button> -->
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="LogoutModal"
+                tabindex="-1"
+                aria-labelledby="LogoutModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="LogoutModalLabel">Alert!</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      Are you sure you want to logout ?
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Logout
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="pie">
-            <canvas id="myChart" style="width: 100%; height: 90% "></canvas>
-            <script>
-                var xValues = ["Correct", "Incorrect"];
-                var yValues = [55, 45];
-                var barColors = [
-                    "rgb(82, 22, 112)",
-                    "rgb(0, 0, 0)",
-                ];
-                new Chart("myChart", {
-                    type: "doughnut",
-                    data: {
-                        labels: xValues,
-                        datasets: [{
-                            backgroundColor: barColors,
-                            data: yValues
-                        }]
-                    },
-                    options: {
-                        title: {
-                            display: true,
-                            text: "Progress",
-                        }
-                    }
-                });
-            </script>
+        <a
+          class="navbar-brand navvi pisblogo"
+          href="#"
+          style="padding: 0px; margin-left: 20px"
+          ><img src="../img/pisblogo.png" alt="Clash Logo" height="30px"
+        /></a>
+      </div>
+    </nav>
+
+    <!-- your code goes here -->
+    <div class="container-fluid" id="b" style="max-height: calc(100vw - 120px)">
+      <div class="row">
+        <div class="col-md-3 user mid-align">
+          <div class="row justify-content-center">
+            <div class="col-6 border border-5 border-dark msg mt-2 fs-4">
+              Well Tried
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-2 tip"></div>
+          </div>
+          <div class="row justify-content-around margin_side gx-1">
+            <div class="col-md-10 box border border-3 border-dark">
+              <div class="row mt-2 pt-1 fw-bold gx-1">
+                <div class="col-md-12 fs-3 mt-1 down_bor2">Your Result</div>
+              </div>
+              <div class="row fs-4">
+                <div class="col-md-12 font_wt">Rank</div>
+              </div>
+              <div class="row fs-4 down_bor gx-1">
+                <div class="col-md-12">5</div>
+              </div>
+              <div class="row fs-4">
+                <div class="col-md-12 font_wt">Score</div>
+              </div>
+              <div class="row fs-4 down_bor gx-1">
+                <div class="col-md-12">15</div>
+              </div>
+              <div class="row fs-4">
+                <div class="col-md-12 font_wt">Questions<br />Attempted</div>
+              </div>
+              <div class="row fs-4 down_bor gx-1">
+                <div class="col-md-12">7</div>
+              </div>
+              <div class="row fs-4">
+                <div class="col-md-12 font_wt">Questions<br />solved</div>
+              </div>
+              <div class="row fs-4">
+                <div class="col-md-12">4</div>
+              </div>
+            </div>
+          </div>
         </div>
-            <div class="box_5">
-                <h1 class="name_1">Clash:</h1>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aut quidem tempora, fugiat, voluptas minus molestiae iste repellat a incidunt laboriosam cum consectetur quae animi commodi recusandae quibusdam voluptatibus aperiam?
+        <div class="col-md-9 mid-align">
+          <div class="row justify-content-center">
+            <div
+              class="row justify-content-evenly align-items-center mt-3 mb-4"
+            >
+              <div class="col-md-4">
+                <div id="the-ribbon" class="award-ribbonone">
+                  <span class="award-ribbonone-text"
+                    >1st<br /><br />
+                    Yash mali <br />
+                    <br />Score-80</span
+                  >
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div id="the-ribbon" class="award-ribbontwo">
+                  <span class="award-ribbontwo-text"
+                    >2nd <br /><br />
+                    Aashish Gupta <br />
+                    <br />Score-75</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div id="the-ribbon" class="award-ribbonthree">
+                  <span class="award-ribbonthree-text"
+                    >3rd <br /><br />
+                    Aditya Mahajan <br />
+                    <br />Score-70</span
+                  >
+                </div>
+              </div>
             </div>
-            <div class="box_6">
-                <h1 class="name_1">Sponsers:</h1>
+          </div>
+          <div class="row justify-content-around bottom">
+            <div class="col-11">
+              <div class="container fs-5">
+                <div class="row justify-content-around py-2" id="one2">
+                  <div class="col-2" id="bor">Rank</div>
+                  <div class="col-5" id="bor">Username</div>
+                  <div class="col-2" id="bor">Score</div>
+                </div>
+                <div class="row justify-content-around py-2 mt-0" id="one">
+                  <div class="col-2" id="bor">4th</div>
+                  <div class="col-5" id="bor">Username</div>
+
+                  <div class="col-2" id="bor">60</div>
+                </div>
+                <div class="row justify-content-around py-2" id="one">
+                  <div class="col-2 mid-align" id="bor">5th</div>
+                  <div class="col-5" id="bor">Username</div>
+                  <div class="col-2" id="bor">60</div>
+                </div>
+                <div class="row justify-content-around py-2" id="one">
+                  <div class="col-2 mid-align" id="bor">6th</div>
+
+                  <div class="col-5" id="bor">Username</div>
+
+                  <div class="col-2" id="bor">60</div>
+                </div>
+                <div style="height: 56px; display: block"></div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
 
+    <!-- Footer goes here -->
+    <div class="clear"></div>
+    <footer class="text-center fixed-bottom footerr">
+      <div class="container-fluid">
+        <div class="footer-text pt-3 pb-3">PISB <span>&copy</span></div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </html>
