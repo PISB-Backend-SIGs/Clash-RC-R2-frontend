@@ -70,7 +70,8 @@
     margin: auto;
     justify-content: center;
     padding:10px ;
-     
+    row-gap: 30px;
+
 }
 
 
@@ -80,8 +81,13 @@
     padding: 0px 8px;
     display: grid;
     grid-template-rows: auto;
+    height: 80vh; 
+}
+.question-sec
+{
     overflow-x: hidden;
-    overflow-y: scroll;        
+    overflow-y: scroll; 
+    height: 55vh;
 }
 /* code answer */
 .codingpart{
@@ -89,14 +95,13 @@
     width: 90%;
     display: grid;
     grid-template-rows: 7% 88% 7%;
-    
 }
 .code-section{
     
     margin-top: 3%;
     display: grid;
     padding-bottom: 10px;
-    
+   
 }
 .codehere
 {
@@ -104,7 +109,7 @@
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-  
+    
 
 }
 .codehere textarea{
@@ -194,7 +199,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgb(47, 255, 50);
+    background: rgb(6, 100, 188);
     color: black;
 }
 .run-btn:after{
@@ -266,7 +271,7 @@
           }
 
           .questionpart{
-            height: 50vh;
+            height: 75vh;
 
           }
           
@@ -379,6 +384,65 @@
     margin: 10px 0px;
 
 }
+.rc-input-output
+{
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Quicksand,sans-serif';
+}
+.inputrc,.outputrc
+{
+   
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+.inputrc h3,.outputrc h3
+{    
+    font-size: 2rem;
+    text-align: center;
+}
+.get-output 
+{
+    display: grid;
+    align-items:end;
+    height: 100px;
+    width: 70%;
+    font-size: 1.4rem;
+}
+.get-output button
+{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    border-color: aliceblue;
+}
+.inputrc textarea
+{
+    background: none;
+    border-radius: 10px;
+    background-color: none; 
+    border-width: 3px;
+    border-color: rgba(6, 100, 188, 0.345);
+    box-shadow: 0 0 10px rgb(47, 155, 255);  
+    color: white;
+    height: 80px;
+    width: 100%;
+}
 
-
-
+ .outputrc textarea{
+      background: none;
+    border-radius: 10px;
+    background-color: none; 
+    border-width: 3px;
+    border-color: rgba(6, 100, 188, 0.345);
+    box-shadow: 0 0 10px rgb(47, 155, 255);  
+    color: white;
+    height: 80px;
+    width: 100%;
+}

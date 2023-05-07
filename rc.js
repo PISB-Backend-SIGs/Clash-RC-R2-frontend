@@ -14,7 +14,7 @@ langSelect.addEventListener('change', function() {
  
   const selectedLang = langSelect.value;
 
-  // Set the mode of the Ace editor based on the selected language  and set the boier plate accordingly   
+  // Set the mode of the Ace editor based on the selected language    
     if(selectedLang==='c_cpp'){
       editor.session.setMode(`ace/mode/c_cpp`);
       editor.session.setValue("");
@@ -91,7 +91,6 @@ consoleBtnn.addEventListener("click", function() {
     consoleBtnUp.classList.remove("hidden");
   }
 });
-
 
 
 
