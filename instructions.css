@@ -1,3 +1,10 @@
+body {
+  background-color: #0b0c10;
+  color: #ffffff;
+  /* background: #022527; */
+  background-image: linear-gradient(201deg, #064346 -23%, #12100e 130%);
+  height: 100vh;
+}
 .heading {
   text-align: center;
   padding: 20px 0px;
@@ -23,14 +30,9 @@
   background-color: #0b0c10;
   color: #ffffff;
 }
-body {
-  background-color: #0b0c10;
+.navbar, footer {
   color: #ffffff;
-}
-navbar,
-footer {
-  background-color: #1f2833;
-  color: #ffffff;
+  background: #022527;
 }
 .whi {
   color: rgb(255, 255, 255);
@@ -47,6 +49,7 @@ footer {
   background-color: #0b0c10;
   border-color: #126e82;
   border-width: 3px;
+  background-image: linear-gradient(201deg, #063235 -23%, #12100e 130%);
 }
 .one {
   top: 19%;
