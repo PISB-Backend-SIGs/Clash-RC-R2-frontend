@@ -7,26 +7,29 @@
 
 }
 footer {
-    background-color: #1f2833;
+    background: #022527;
     color: #ffffff;
   }
 
 .navbar-brand{
     font-size:18px;
+    color: #ffffff;
 }
 
 .nav-link{
     font-size:15px;
+    color: #ffffff;
 }
 
 body{
     /* position:relative; */
-    background: url("../images/blue.jpeg") center / cover;
+    background-image: linear-gradient(201deg, #064346 -23%, #12100e 130%);
     /* background-color: #010B19; */
     min-height: 100vh;
     /* display:flex; */
     justify-content: center;
     align-items:center;
+    padding-bottom: 55px;
 }
 
 table, th, td{
@@ -41,24 +44,25 @@ th{
 .table{
     /* width:77vw; */
     height:90vh;
-    background-color: rgba(255, 255, 255, 0.415);
+    background-color: linear-gradient(201deg, #064346 -23%, #12100e 130%);
     backdrop-filter: blur(7px);
-    box-shadow: 0 0.4rem 0.8rem #0005;
     border-radius: 0.6rem;
     overflow:hidden;
+    color: white;
+    border-color: 2px rgba(122, 206, 86, 0.911);
 }
 
 .table_header{
     width:100%;
     height:10%;
-    background-color: #FFF4;
+    background-image: linear-gradient(201deg, #053a3d -23%, #12100e 130%);
     padding:0.8rem 5rem;
 }
 
 .table_body{
     width:95%;
     max-height:calc(89% - 0.8rem);
-    background-color:#FFFB;
+    background-image: linear-gradient(201deg, #05494d -23%, #12100e 130%);
     margin:0.8rem auto;
     border-radius:0.6rem;
     overflow: auto;
@@ -92,7 +96,7 @@ thead, th{
 
 
 .submitted1{
-    background-color:rgb(17, 144, 17);
+    background-color:rgba(17, 144, 17, 0.685);
     padding:0.4rem 1rem;
     border-radius:0.5rem;
     margin-bottom: 0.3rem;
@@ -101,7 +105,7 @@ thead, th{
 }
 
 .submitted2{
-    background-color:#cc2923;
+    background-color:#cc2923ba;
     padding:0.4rem 1rem;
     border-radius:0.5rem;
     margin-bottom: 0.3rem;
@@ -110,7 +114,7 @@ thead, th{
 }
 
 .submitted3{
-    background-color:#c76718 ;
+    background-color:#c76718c3 ;
     padding:0.4rem 1rem;
     border-radius:0.5rem;
     margin-bottom: 0.3rem;
@@ -148,7 +152,7 @@ thead, th{
     padding:0.5rem 0.6rem; 
     border-radius: 0.5rem;
     border-style:none;
-    background-color: #0d5a7a; 
+    background-color: #09512e; 
     font-size: 0.95rem;
     color:#FFFFFF; 
 }
@@ -156,10 +160,10 @@ thead, th{
 .btn3{
     padding:0.5rem 0.7rem; 
     border-radius: 0.5rem;
-    border-style:none;
-    background-color: #0f6e97; 
+    background: linear-gradient(201deg, #064346 -23%, #12100e 150%);
     font-size: 0.95rem;
-    color:#FFFFFF; 
+    color:#FFFFFF;
+    border-color: rgba(122, 206, 86, 0.911); 
 }
 
 .btn2:hover{
@@ -177,9 +181,10 @@ thead, th{
 } */
 
 .navbar{
-    color:#FFF4;
+    color:white;
     backdrop-filter: blur(8px);
     margin-bottom: 1%;
+    background: #022527
     /* display:flex; */
 }
 
@@ -194,6 +199,27 @@ tbody,tr:hover{
 
 .text-center{
     backdrop-filter: blur(8px);
+}
+
+.modal-content {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    /* background-color: #022527; */
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+    max-height: 100%;
+    overflow: hidden;
+    background: #082934;
+    color: white;
+    border: 3px solid #08f4ac;
+    margin: auto 3%;
 }
 
 @media only screen and (max-width: 429px) { 

@@ -1,6 +1,8 @@
 /* Head strip for ques no , score and timer */
 .mainBody{
-    background-color: black;
+    background-image: linear-gradient(201deg, #064346 -23%, #12100e 130%);
+    height: 100vh;
+    width: 100vw;
 }
 .head-strip{
     display: grid;
@@ -10,7 +12,7 @@
     width: 98vw;
     border: 1px solid black;
     border-radius: 20px;
-    background-color: rgba(0, 49, 95, 0.829);  
+    background: #022527;  
 }
 .queno{
     display: inline ;
@@ -22,11 +24,19 @@
 }
 #qbtn{
     border-radius: 100%; 
-    background-color: rgba(0, 49, 95, 0.829);  
+    background-color: linear-gradient(201deg, #145f63 -23%, #3c3935 130%);  
     border-width: 3px;
-    border-color: #5036e4;
-    box-shadow: 0 0 10px #2b2fff;   
+    border-color: rgba(122, 206, 86, 0.911);;
+    box-shadow: 0 0 10px rgb(68, 127, 107);  
     color: white;
+}
+.ace-cobalt .ace_gutter {
+    background: #022527;
+    color: rgb(128,145,160);
+}
+.ace-cobalt {
+    background-color: #0f5054;
+    color: #FFFFFF;
 }
 #qbtn:hover
 {
@@ -179,7 +189,7 @@
     transition: all 0.4s;
 }
 .console-btn,.run-btn {
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgba(122, 206, 86, 0.911);;
     color: rgb(255, 255, 255);
 }
 .console-btn:hover,.run-btn:hover {
@@ -216,7 +226,9 @@
 .console-btn:hover:after, .console-btn:active:after,.run-btn:hover:after,.run-btn:active:after{
     width: 100%;
 }
-
+#langbtn {
+    background-color: #48a44e!important;
+}
 /*question section*/
 .que-name,.que-constrains
 {
@@ -245,6 +257,11 @@
 
 
 /* Media query for Responsiveness */
+    @media(max-width:900px){
+        #score{
+            display: none;
+        }
+    }
 
     @media(max-width:800px){
           .head-strip{
@@ -281,24 +298,6 @@
 
           }
         }
-
-     @media(max-width:500px){
-        .questionpart{
-            height: 60vh;
-            
-          }
-
-          .choosefile .choosef{
-            width: 100px;
-            margin-left: auto;
-        }
-        
-        #langbtn{
-            width: 100px;   
-        }
-         
-          
-     }   
 /* BOX ANIMATIONS*/
 /*scroll Bar*/
 /* width */
@@ -375,7 +374,7 @@
 
 .overallStatus{
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      color: green;
+      color: rgba(122, 206, 86, 0.911);
       font-size: 24px;
       margin-bottom: 15px;
 }
@@ -420,7 +419,7 @@
     border-radius: 10px;
     background: none;
     color: white;
-    border-color: aliceblue;
+    border-color: rgba(122, 206, 86, 0.911);;
 }
 .inputrc textarea
 {
@@ -428,8 +427,8 @@
     border-radius: 10px;
     background-color: none; 
     border-width: 3px;
-    border-color: rgba(6, 100, 188, 0.345);
-    box-shadow: 0 0 10px rgb(47, 155, 255);  
+    border-color: rgba(122, 206, 86, 0.911);
+    box-shadow: 0 0 10px rgb(68, 127, 107);  
     color: white;
     height: 80px;
     width: 100%;
@@ -440,8 +439,8 @@
     border-radius: 10px;
     background-color: none; 
     border-width: 3px;
-    border-color: rgba(6, 100, 188, 0.345);
-    box-shadow: 0 0 10px rgb(47, 155, 255);  
+    border-color: rgba(122, 206, 86, 0.911);
+    box-shadow: 0 0 10px rgb(68, 127, 107);  
     color: white;
     height: 80px;
     width: 100%;

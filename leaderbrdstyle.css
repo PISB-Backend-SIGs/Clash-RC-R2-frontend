@@ -25,7 +25,11 @@ footer {
     border: 1px solid rgba(128, 126, 130, 0.3);
     background: linear-gradient(to bottom,   rgba(134, 75, 230, 0.911) 0%, rgb(3 52 242 / 10%) 100%);
 }
-
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: inherit !important;
+    border: 1px solid rgba(128, 126, 130, 0.3);
+    background: linear-gradient(to bottom,   rgba(71, 196, 141, 0.578) 0%, rgba(33, 145, 93, 0.436) 100%);
+}
 .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
     color: #ffffff82; 
 }
